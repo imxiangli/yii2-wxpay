@@ -1,0 +1,21 @@
+{
+    "name": "imxiangli/yii2-wxpay",
+    "description": "适用于Yii2的微信支付扩展",
+    "type": "library",
+    "keywords": ["yii2","wxpay"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "lixiang",
+            "email": "imxiangli@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "imxiangli\\wxpay\\": ""
+        }
+    }
+}
