@@ -1,6 +1,8 @@
 <?php
 namespace imxiangli\wxpay;
 
+use yii\base\Component;
+
 /**
  *
  * 接口访问类，包含所有微信支付API列表的封装，类中方法为static方法，
@@ -8,7 +10,7 @@ namespace imxiangli\wxpay;
  * @author widyhu
  *
  */
-class WxPayApi
+class WxPayApi extends Component
 {
     public $app_id;
     public $mch_id;
@@ -16,10 +18,10 @@ class WxPayApi
     public $app_secret;
     public $ssl_cert_path;
     public $ssl_key_path;
-    public $curl_proxy_host;
-    public $curl_proxy_port;
-    public $report_level;
     public $notify_url;
+    public $curl_proxy_host = '0.0.0.0';
+    public $curl_proxy_port = 0;
+    public $report_level = 1;
 
     /**
      *
