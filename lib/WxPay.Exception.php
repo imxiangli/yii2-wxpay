@@ -1,9 +1,4 @@
 <?php
-
-namespace imxiangli\wxpay;
-
-use yii\base\Exception;
-
 /**
  * 
  * 微信支付API异常类
