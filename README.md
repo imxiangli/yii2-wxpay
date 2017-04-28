@@ -32,6 +32,7 @@ Once the extension is installed, simply use it in your code by  :
 
 ```php
 // common/config/main-local.php
+<?php
 return [
   'components' => [
   
@@ -61,6 +62,7 @@ return [
 
 ```php
 // frontend/controllers/WxController.php
+<?php
 namespace frontend\controllers;
 
 use imxiangli\wxpay\WxPay;
@@ -177,7 +179,6 @@ class NativeNotifyCallBack extends \WxPayNotify
 ```php
 //支付成功处理业务逻辑
 // frontend/wxpay/PayNotifyCallBack.php
-
 <?php
 namespace frontend\wxpay;
 
